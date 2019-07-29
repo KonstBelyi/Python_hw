@@ -1,4 +1,5 @@
 print("Урок 1. Задание 3.")
+print("======================")
 print("Ввести в консоле:")
 print("a. import this")
 print("b. import antigravity")
