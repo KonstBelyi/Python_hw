@@ -1,0 +1,6 @@
+print("Урок 1. Задание 3.")
+print("Ввести в консоле:")
+print("a. import this")
+print("b. import antigravity")
+print("c. import __hello__")
+print("d. from __future__ import braces")
