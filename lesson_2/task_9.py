@@ -8,3 +8,9 @@
 print('===================================')
 n = 15
 print('Number of students n = {N}'.format(N=n))
+k = 68
+print('Number of apples k = {K}'.format(K=k))
+i = k // n
+print('Number of apples for each student is: {K}/{N} = {I} apples'.format(K=k, N=n, I=i))
+x = k % n
+print('Number of apples left in the basket: {}'.format(x))
