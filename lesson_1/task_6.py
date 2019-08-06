@@ -10,7 +10,15 @@
 x = 86
 y = 13
 print(x, y)     # Вывести на экран консоли оба числа используя только один вызов print()
-print(x + y)    # Вычислить сумму чисел
-print(x // y)   # Выполнить целочисленное деление
-print(x % y)    # Найти остаток
-print(x ** y)   # Вычислить степень числа: x^y
+print('++++++++++++++++++')
+i = x + y
+print('Result of sum ' + str(x) + ' and ' + str(y) + ':', i)    # Вычислить сумму чисел
+print('++++++++++++++++++')
+i = x // y
+print('Result of integer division {} and {}: {}'.format(x, y, i))   # Выполнить целочисленное деление
+print('++++++++++++++++++')
+i = x % y
+print('Leftover of division {} and {}: {}'.format(x, y, i))    # Найти остаток
+print('++++++++++++++++++')
+i = x ** y
+print('Result of exponentiation {} to {}: {}'.format(x, y, i))   # Вычислить степень числа: x^y
