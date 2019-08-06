@@ -7,9 +7,9 @@
 print('=====================================')
 a = 44
 b = 35
-print('Cathetus length K1 = {A}' .format(A=a))
-print('Cathetus length K2 = {B}' .format(B=b))
+print('Cathetus length K1 = {A} cm' .format(A=a))
+print('Cathetus length K2 = {B} cm' .format(B=b))
 c = 1/2
 s = int(c * a * b)
-print('Result of the area of a right triangle calculation is S = {C} * {A} * {B}: {S}'.format(A=a, B=b, C=c, S=s))
+print('Result of the area of a right triangle calculation is S = {C} * {A} * {B}, \nS = {S} cm^2'.format(A=a, B=b, C=c, S=s))
 print('=====================================')
