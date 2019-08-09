@@ -13,5 +13,11 @@
 
 v = float(input('Please, enter the cyclists speed (km/hr): '))
 t = int(input('Please, enter in how many hours cyclist stops after start (hr): '))
+if v < 0:
+    v = -v
 x = int(v * t)
-print('The point, where cyclist stops after', t, 'hours from the start line, is:', x, 'kilometres.')
+if 0 <= x <= 100:
+    print('The point, where cyclist stops after', t, 'hours from the start line, is:', x, 'kilometres.')
+else:
+    if x > 100:
+        print('The cyclist is already relaxes on the beach ;)')
