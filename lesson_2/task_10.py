@@ -5,13 +5,13 @@
 Учтите, что число n может быть больше, чем количество минут в сутках.
 
 """
-print('===========================')
-n = 1856
-print('Number of minutes after 0 AM: {} minutes.'.format(n))
-k = 60
-h = int(n / k)
-print('Number of hours has passed after 0 AM: {}.'.format(h))
-m = int(n % k)
-print('Number of minutes left: {}.'.format(m))
-x = h - 24
-print('Time on watch, after {N} minutes has passed after 0 AM: {X}:{M}.'.format(N=n, X=x, M=m))
+n = int(input('Please, enter the number of minutes: '))
+h = int(n / 60)     # перевожу введеное количество минут в часы
+print('Number of hours has passed after 0:00 : {} hour(s).'.format(h))
+m = int(n % 60)     # получаю остаток минут
+print('Number of minutes has passed after 0:00 : {} minute(s).'.format(m))
+if h > 23:
+    h = h - 24      # условие срабатывает, если количество часов > 23
+if m < 10:
+    m = '0' + str(m)
+print('Time on watch, after {N} minutes has passed after 0:00 : {H}:{M}.'.format(N=n, H=h, M=m))

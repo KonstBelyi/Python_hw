@@ -5,5 +5,5 @@
 
 """
 
-n = input('Please, enter your name: ')
-print('Hello,', n, '\b!')
+n = input('Hello! Please, enter your name: ')
+print('\'Hello', n, '\b!\'')

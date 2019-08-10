@@ -8,10 +8,8 @@
 
 """
 
-import math
-
 x1 = int(input('Students in class #1: '))
 x2 = int(input('Students in class #2: '))
 x3 = int(input('Students in class #3: '))
-print('Sum of all students is:', x1 + x2 + x3)
-print('Sum of desks we need (one desk for two students) is:', math.ceil((x1 + x2 + x3)/2))
+print('Sum of all students:', x1 + x2 + x3, '\b.')
+print('Number of desks we need (one desk for each of two students) is:', round(((x1 + x2 + x3)/2) + 0.5))

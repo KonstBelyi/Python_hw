@@ -17,7 +17,10 @@
 
 """
 
-n = int(input('Please enter an integer number: '))
-print('The next number for the number', n, 'is', n+1, '\b.')
-print('The previous number for the number', n, 'is', n-1, '\b.')
-
+n = int(input('\tPlease enter an integer number: '))
+print('\tThe next number for the number', n, 'is', n+1, '\b.')
+print('\tThe previous number for the number', n, 'is', n-1, '\b.')
+print('\n or \n')
+n = int(input('\tPlease enter an integer number: '))
+print('\tThe next number for the number', n, 'is', n+1, '\b.')
+print('\tThe previous number for the number', n, 'is', n-1, '\b.')
