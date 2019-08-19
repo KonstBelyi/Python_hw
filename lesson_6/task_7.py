@@ -18,7 +18,6 @@ k = int(input('Введите индекс элемента, k = '))
 for i in range(len(lst) - 1):
     if i > (k - 1):
         lst[i] = lst[i + 1]
-        lst[i + 1] = lst[i]
 print()
 
 lst.pop()
