@@ -11,13 +11,15 @@ number = list(number)
 
 def sdvig():
     sdvig_number = input('Введите число для сдвига: ')
-    steps = int(input('Введите количество разрядов для сдвига: '))
+    steps = int(input('Введите количество разрядов для сдвига: ') or '1')
     direction = input('Введите True, чтобы сдвинуть число вправо, или False, чтобы сдвинуть его влево: ')
     sdvig_number_idx = number.index(sdvig_number)
     del number[sdvig_number_idx]
+    if steps > len(number) or steps < 1:
+        steps = 1
     if direction == 'True':
         number.insert(sdvig_number_idx + steps, str(sdvig_number))
-    if direction == 'False':
+    else:
         number.insert(sdvig_number_idx - steps, str(sdvig_number))
     print('Число на выходе: ')
     for i in range(len(number)):
